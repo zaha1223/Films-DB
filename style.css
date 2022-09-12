@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("./fonts/courier-prime-v7-latin-700.woff2") format("woff2"),
+    url("./fonts/courier-prime-v7-latin-700.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: lightskyblue;
+}
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+/* header */
+.header {
+  background-image: url(./img/header-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 20px;
+}
+.header-info {
+  /* margin-top: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-title:hover {
+  opacity: 0.5;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  margin-right: 30px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.nav-link {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000;
+}
+.cta-btn {
+  width: 200px;
+  height: 48px;
+  display: inline-block;
+  padding-top: 9px;
+  border-radius: 55px;
+  background-color: deeppink;
+  text-align: center;
+}
+.cta-btn:hover {
+  background-color: blueviolet;
+  color: deeppink;
+  transition: 0.3s;
+}
+/* main */
+/* hero section */
+
+.hero-section {
+  background-image: url(./img/main-bg.webp);
+  width: 100%;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero-list {
+  width: 900px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.hero-item {
+  width: 300px;
+  box-shadow: 5px 5px 5px 5px grey;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 24px;
+  margin-right: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.hero-item:hover {
+  background-color: deeppink;
+  color: #fff;
+}
